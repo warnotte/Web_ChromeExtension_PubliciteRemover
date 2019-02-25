@@ -32,7 +32,11 @@ else
 if (window.location.origin.includes("rtbf"))
 {
 	removeRtbf();
-	
+}
+else
+if (window.location.origin.includes("rtl"))
+{
+	removeRtl();
 }
 else
 	alert("Unknonwn site url");
@@ -43,7 +47,9 @@ else
 *
 */
 
-
+function removeRtl() {
+	
+}
 
 function removeRtbf() {
 	

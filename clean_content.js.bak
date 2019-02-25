@@ -48,7 +48,8 @@ else
 */
 
 function removeRtl() {
-
+	#w-content-details-right-col
+	#w-content-details-right-col
 }
 
 function removeRtbf() {

@@ -1,32 +1,24 @@
-﻿// document.body.style.color = "blue"
-
-$("body").prepend("<div>Source : <a href=\""+window.location.href+"\">"+window.location.href+"</a></div>");
+﻿$("body").prepend("<div>Source : <a href=\""+window.location.href+"\">"+window.location.href+"</a></div>");
 
 if (window.location.origin.includes("dhnet"))
 {
 	removeDhNet();
-	
-	
 }
 else
 if (window.location.origin.includes("lavenir"))
 {
 	removeLavenir();
-	
-	
 }
 else
 if (window.location.origin.includes("lalibre"))
 {
 	// Meme chose que DHnet a priori.
 	removeDhNet();
-	
 }
 else
 if (window.location.origin.includes("sudinfo"))
 {
 	removeSufIndo();
-	
 }
 else
 if (window.location.origin.includes("lameuse"))
@@ -39,15 +31,12 @@ if (window.location.origin.includes("lameuse"))
 else
 if (window.location.origin.includes("rtbf"))
 {
-	// Drole de mix ;) mais ça marche jusque la.
 	removeRtbf();
 	
 }
 else
 	alert("Unknonwn site url");
-	
-	
-	
+		
 /**
 *
 * Functions
@@ -55,12 +44,15 @@ else
 */
 
 
-	
 
 function removeRtbf() {
 	
-	$( ".banner" ).remove();
+	// Keep logo and comment .topbar
+	//$( ".rtbf-nav" ).remove();
+	//$( ".rtbf-nav-plus" ).remove();
+	
 	$( ".topbar" ).remove();
+	$( ".banner" ).remove();
 	$( ".rtbf-nav-full" ).remove();
 	$( ".rtbf-site-nav" ).remove();
 	$( ".www-sidebar" ).remove();
@@ -74,8 +66,7 @@ function removeRtbf() {
 	$( ".footer-main" ).remove();
 	// Rtbf sport
 	$( ".rtbf-direct-line" ).remove();
-	
-	
+
 }
 
 function removeLameuse() {

@@ -1,24 +1,32 @@
 ﻿// document.body.style.color = "blue"
 
+$("body").prepend("<div>Source : <a href=\""+window.location.href+"\">"+window.location.href+"</a></div>");
+
 if (window.location.origin.includes("dhnet"))
 {
 	removeDhNet();
+	
+	
 }
 else
 if (window.location.origin.includes("lavenir"))
 {
 	removeLavenir();
+	
+	
 }
 else
 if (window.location.origin.includes("lalibre"))
 {
 	// Meme chose que DHnet a priori.
 	removeDhNet();
+	
 }
 else
 if (window.location.origin.includes("sudinfo"))
 {
 	removeSufIndo();
+	
 }
 else
 if (window.location.origin.includes("lameuse"))
@@ -26,6 +34,7 @@ if (window.location.origin.includes("lameuse"))
 	// Drole de mix ;) mais ça marche jusque la.
 	removeSufIndo();
 	removeLameuse();
+	
 }
 else
 if (window.location.origin.includes("rtbf"))
@@ -44,27 +53,27 @@ else
 * Functions
 *
 */
+
+
 	
 
 function removeRtbf() {
-
+	
 	$( ".banner" ).remove();
 	$( ".topbar" ).remove();
 	$( ".rtbf-nav-full" ).remove();
 	$( ".rtbf-site-nav" ).remove();
 	$( ".www-sidebar" ).remove();
-	
+	$( "#top" ).remove();
 	$( ".col-md-8" ).removeClass('col-md-8').addClass('col-md-12');
-	
-	
 	$( "#readspeaker_button1" ).remove();
-
 	$( ".article-social" ).remove();
-	
 	$( ".rtbf-article-main__related" ).remove();
+	$( ".rtbf-newsletter-article" ).remove();
+	
 	$( ".footer-main" ).remove();
-	
-	
+	// Rtbf sport
+	$( ".rtbf-direct-line" ).remove();
 	
 	
 }

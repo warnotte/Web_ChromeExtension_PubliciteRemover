@@ -34,6 +34,11 @@ if (window.location.origin.includes("rtbf"))
 	removeRtbf();
 }
 else
+if (window.location.origin.includes("lesoir"))
+{
+	removeLeSoir();
+}
+else	
 if (window.location.origin.includes("rtl"))
 {
 	removeRtl();
@@ -50,6 +55,46 @@ else
 function removeRtl() {
 
 }
+
+
+function removeLeSoir() {
+	// TODO : In progress 
+	$( "#gr-header" ).remove();
+	$( "#gr-sidebar" ).remove();
+	$( ".pane-voir-aussi" ).remove();
+	
+	$( ".gr-pane" ).remove();
+	$( ".pane-eng-ls-plan-du-site" ).remove();
+	$( "#comments" ).remove();
+	$( ".gr-social-links" ).remove();
+	$( ".gr-social" ).remove();
+	$( ".gr-linked-stories" ).remove();
+	$( ".gr-free-tags" ).remove();
+	$( ".pane-ena-breadcrumb" ).remove();
+	
+	
+	
+	$( "#gr-article" ).css("width", "100%");
+	
+	$( "#gr-sidebar-left" ).remove();
+	$( ".gr-article-sidebar" ).remove();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
 
 function removeRtbf() {
 	

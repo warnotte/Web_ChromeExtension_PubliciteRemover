@@ -112,6 +112,10 @@ function removeLameuse() {
 	$( ".gr-carousel-breaking" ).remove();
 }
 
+/**
+Version avant 12-12-2019
+*/
+/*
 function removeSufIndo() {
 	$( "#gr-header" ).remove();
 	$( "#gr-sidebar" ).remove();
@@ -120,6 +124,26 @@ function removeSufIndo() {
 	$('.panel-pane').nextAll().remove();	
 	$("#gr-article").css("padding-left", "10px");
 	$("#gr-article").css("width", "100%");
+}
+*/
+
+function removeSufIndo() {
+	$( "#gr-header" ).remove();
+	$( ".OUTBRAIN " ).remove();
+	$( "#gr-sidebar" ).remove();
+	$( ".thRecommendations" ).remove();
+	$( "#slg-digiteka" ).remove();
+	$( "#gr-footer" ).remove();	
+	$( "#commentaires").remove();
+	
+	/*
+	$( ".gr-article-infos" ).remove();
+	$( "#gr-footer" ).remove();	
+	$('.panel-pane').nextAll().remove();	
+	$("#gr-article").css("padding-left", "10px");
+	$("#gr-article").css("width", "100%");
+	
+	*/
 }
 
 /* 

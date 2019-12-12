@@ -79,19 +79,6 @@ function removeLeSoir() {
 	$( "#gr-sidebar-left" ).remove();
 	$( ".gr-article-sidebar" ).remove();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
 
 
@@ -135,6 +122,8 @@ function removeSufIndo() {
 	$("#gr-article").css("width", "100%");
 }
 
+/* 
+Version avant 12-12-2019
 function removeDhNet() {
 	// Dh.Net
 	$( ".documentHeader" ).remove();
@@ -150,6 +139,37 @@ function removeDhNet() {
 	$('.article-highlightedLinksBox').remove();
 	$('body').get(0).style.setProperty( 'padding-top', '0', 'important' );
 }
+*/
+
+function removeDhNet() {
+	// Dh.Net
+	$( ".documentHeader" ).remove();
+	$( ".documentFooter" ).remove();
+	$( "#articleIlluFullWidth").remove();
+	
+	$( ".addthis_sharing_toolbox").remove();
+	$( ".shareToolsBar").remove();
+	$( ".article-shareBox").remove();
+	$( ".comments").remove();
+	
+	$("#block1").remove();
+	$("#block2").remove();
+	$("#block3").remove();
+	$("#block4").remove();
+	$("#block5").remove();
+	$("#block6").remove();
+	$("#block7").remove();
+	$("#block8").remove();
+	$(".article-linksList").remove();
+
+
+
+$('body').get(0).style.setProperty( 'padding-top', '0', 'important' );
+}
+
+
+
+
 
 function removeLavenir() {
 	$( ".site-header" ).remove();

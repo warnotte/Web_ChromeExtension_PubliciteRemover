@@ -73,6 +73,11 @@ function removeLeSoir() {
 	$( ".pane-ena-breadcrumb" ).remove();
 	
 	
+	$( ".OUTBRAIN" ).remove();
+	$( ".pane-block-marketing-sites-newslett" ).remove();
+	$( "#rossel-leader-top" ).remove();
+	
+	
 	
 	$( "#gr-article" ).css("width", "100%");
 	
